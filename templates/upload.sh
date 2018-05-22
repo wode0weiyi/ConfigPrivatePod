@@ -17,5 +17,5 @@ git add .
 git commit -am ${NewVersionNumber}
 git tag ${NewVersionNumber}
 git push origin master --tags
-cd ~/.cocoapods/repos/PrivatePods && git pull origin master && cd - && pod repo push PrivatePods __ProjectName__.podspec --verbose --allow-warnings --use-libraries
+cd ~/.cocoapods/repos/YinPrivatePods && git pull origin master && cd - && pod repo push PrivatePods __ProjectName__.podspec --verbose --allow-warnings --use-libraries
 
