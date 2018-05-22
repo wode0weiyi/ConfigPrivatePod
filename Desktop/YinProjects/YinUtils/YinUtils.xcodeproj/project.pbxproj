@@ -13,6 +13,7 @@
 		A9FC8D4D20B3EB3B00A659B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9FC8D4C20B3EB3B00A659B8 /* Assets.xcassets */; };
 		A9FC8D5020B3EB3B00A659B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9FC8D4E20B3EB3B00A659B8 /* LaunchScreen.storyboard */; };
 		A9FC8D5320B3EB3B00A659B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FC8D5220B3EB3B00A659B8 /* main.m */; };
+		A9FC8D5D20B3EFAB00A659B8 /* RequestUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FC8D5C20B3EFAB00A659B8 /* RequestUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		A9FC8D4F20B3EB3B00A659B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9FC8D5120B3EB3B00A659B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9FC8D5220B3EB3B00A659B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9FC8D5B20B3EFAB00A659B8 /* RequestUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestUtil.h; sourceTree = "<group>"; };
+		A9FC8D5C20B3EFAB00A659B8 /* RequestUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		A9FC8D4220B3EB3A00A659B8 /* YinUtils */ = {
 			isa = PBXGroup;
 			children = (
+				A9FC8D5920B3EFAB00A659B8 /* YinUtils */,
 				A9FC8D4320B3EB3A00A659B8 /* AppDelegate.h */,
 				A9FC8D4420B3EB3A00A659B8 /* AppDelegate.m */,
 				A9FC8D4620B3EB3A00A659B8 /* ViewController.h */,
@@ -69,6 +73,23 @@
 				A9FC8D5220B3EB3B00A659B8 /* main.m */,
 			);
 			path = YinUtils;
+			sourceTree = "<group>";
+		};
+		A9FC8D5920B3EFAB00A659B8 /* YinUtils */ = {
+			isa = PBXGroup;
+			children = (
+				A9FC8D5A20B3EFAB00A659B8 /* RequestUtils */,
+			);
+			path = YinUtils;
+			sourceTree = "<group>";
+		};
+		A9FC8D5A20B3EFAB00A659B8 /* RequestUtils */ = {
+			isa = PBXGroup;
+			children = (
+				A9FC8D5B20B3EFAB00A659B8 /* RequestUtil.h */,
+				A9FC8D5C20B3EFAB00A659B8 /* RequestUtil.m */,
+			);
+			path = RequestUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +165,7 @@
 				A9FC8D4820B3EB3A00A659B8 /* ViewController.m in Sources */,
 				A9FC8D5320B3EB3B00A659B8 /* main.m in Sources */,
 				A9FC8D4520B3EB3A00A659B8 /* AppDelegate.m in Sources */,
+				A9FC8D5D20B3EFAB00A659B8 /* RequestUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

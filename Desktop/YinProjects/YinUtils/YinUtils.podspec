@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YinUtils"
-  s.version      = "3"
+  s.version      = "4"
   s.summary      = "YinUtils."
 
   # This description is used to generate tags and improve search results.
@@ -117,7 +117,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
+   s.framework  = "AFNetworking"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
