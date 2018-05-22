@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YinUtils"
-  s.version      = "2"
+  s.version      = "3"
   s.summary      = "YinUtils."
 
   # This description is used to generate tags and improve search results.
@@ -117,7 +117,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-   s.framework  = "AFNetworking"
+  # s.framework  = "AFNetworking"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
@@ -135,6 +135,6 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "BLNetworking"
   # s.dependency "BLAPIManagers"
-  # s.dependency "BLMediator"
+   s.dependency "AFNetworking"
 
 end
