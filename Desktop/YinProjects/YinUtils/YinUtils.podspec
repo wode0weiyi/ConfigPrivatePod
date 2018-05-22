@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YinUtils"
-  s.version      = "5"
+  s.version      = "2"
   s.summary      = "YinUtils."
 
   # This description is used to generate tags and improve search results.
