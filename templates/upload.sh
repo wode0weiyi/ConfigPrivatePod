@@ -15,6 +15,7 @@ getVersionNum(){
     fi
 }
 
+<<<<<<< HEAD
 getPrivatePodsName(){
     read -p "Enter privatePodsName:" privatePodsName
 
@@ -50,4 +51,11 @@ git commit -m ${versionNum}  &> /dev/null
 git tag ${versionNum}  &> /dev/null
 git push origin master --tags  &> /dev/null
 cd ~/.cocoapods/repos/${privatePodsName} && git pull origin master && cd - && pod repo push ${privatePodsName} __ProjectName__.podspec --verbose --allow-warnings --use-libraries  &> /dev/null
+=======
+git add .
+git commit -am ${NewVersionNumber}
+git tag ${NewVersionNumber}
+git push origin master --tags
+cd ~/.cocoapods/repos/YinPrivatePods && git pull origin master && cd - && pod repo push PrivatePods __ProjectName__.podspec --verbose --allow-warnings --use-libraries
+>>>>>>> 9f89205b2fe7b9d0df2dd9610d947334dd7de864
 

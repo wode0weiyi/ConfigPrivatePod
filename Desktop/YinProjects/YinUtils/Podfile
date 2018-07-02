@@ -4,6 +4,6 @@
 source 'https://github.com/HGYinOrganization/YinPrivatePod.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
-target '__ProjectName__' do
+target 'YinUtils' do
  
 end
