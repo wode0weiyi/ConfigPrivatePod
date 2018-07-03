@@ -5,7 +5,9 @@ Default='\033[0;m'
 
 versionNum=""
 privatePodsName=""
+projectName=""
 confirmed="n"
+
 
 getVersionNum(){
     read -p "Enter VersionNum:" versionNum
@@ -23,12 +25,22 @@ getPrivatePodsName(){
     fi
 }
 
+getProjectName(){
+    read -p "Enter projectName:" projectName
+
+    if test -z "$projectName";then
+        getProjectName
+    fi
+}
+
 getInfomation(){
+    getProjectName
     getVersionNum
     getPrivatePodsName
 
 
     echo -e "============================================"
+    echo -e "projectName      : ${Cyan}${projectName}${Default}"
     echo -e "versionNum       : ${Cyan}${versionNum}${Default}"
     echo -e "privatePodsName  : ${Cyan}${privatePodsName}${Default}"
     echo -e "============================================"
@@ -49,5 +61,5 @@ git add .
 git commit -m ${versionNum}
 git tag ${versionNum}
 git push origin master --tags
-pod spec lint __ProjectName__.podspec --use-libraries
-pod repo push ${privatePodsName} __ProjectName__.podspec --verbose --allow-warnings --use-libraries
+pod spec lint ${projectName}.podspec --use-libraries
+pod repo push ${privatePodsName} ${projectName}.podspec --verbose --allow-warnings --use-libraries
