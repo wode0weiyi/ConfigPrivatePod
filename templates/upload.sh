@@ -45,8 +45,9 @@ done
 
 
 
-git add .  &> /dev/null
-git commit -m ${versionNum}  &> /dev/null
-git tag ${versionNum}  &> /dev/null
-git push origin master --tags  &> /dev/null
-cd ~/.cocoapods/repos/${privatePodsName} && git pull origin master && cd - && pod repo push ${privatePodsName} __ProjectName__.podspec --verbose --allow-warnings --use-libraries  &> /dev/null
+git add .
+git commit -m ${versionNum}
+git tag ${versionNum}
+git push origin master --tags
+pod spec lint __ProjectName__.podspec --use-libraries
+pod repo push ${privatePodsName} __ProjectName__.podspec --verbose --allow-warnings --use-libraries
